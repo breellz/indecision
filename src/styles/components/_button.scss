@@ -1,0 +1,56 @@
+//big button
+.big-button{
+    background: $off-yellow;
+    border-style: solid;
+    border-color: $off-yellow;
+    border-radius: $m-size;
+    border-bottom: .6rem solid darken($off-yellow, 10%);
+    color: $off-black;
+    font-size: $l-size;
+    font-weight: bold;
+    font-family: 'Righteous',cursive;
+    margin-bottom: $m-size;
+    width: 100%;
+    padding:1rem;
+    transition: ease-in-out 0.4s;
+
+}
+.big-button:hover{
+   padding: 1.5rem;
+}
+.big-button:disabled{
+    opacity:.5
+}
+.big-button:disabled:hover{
+    padding:1rem;
+}
+.big-button:focus{
+    background: darken($off-yellow,100%)
+
+}
+
+//button
+.button{
+    background: $off-yellow;
+    border-bottom:.3rem solid darken($off-yellow, 10%);
+    color:$off-black;
+    padding:$s-size;
+    font-weight: 500;
+    border-style: solid;
+    border-color: $off-yellow;
+    border-radius: $s-size;
+    font-family: 'Righteous',cursive;
+}
+
+.button--link{
+    background: none;
+    border: none;
+    padding: 0;
+    color:$off-pink;
+}
+
+@media (min-width: $desktop-breakpoint){
+    .big-button{
+        margin-bottom: $xl-size;
+    }
+}

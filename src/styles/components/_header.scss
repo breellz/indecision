@@ -1,0 +1,23 @@
+.header{
+    background: $off-black;
+    color: $off-pink;
+    margin-bottom: $m-size;
+    padding: $m-size 0;
+    font-family: 'Righteous',cursive;
+}
+.header__title{
+    font-size:$xl-size;
+    margin: 0;
+}
+.header__subtitle{
+    font-size:$m-size;
+    font-weight:700;
+    color:$off-yellow;
+    margin-top: 10px;
+}
+
+@media (min-width: $desktop-breakpoint){
+    .header{
+        margin-bottom: $xl-size;
+    }
+}
