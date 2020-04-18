@@ -6,7 +6,8 @@
   "scripts": {
     "serve": "live-server public/",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
+    "build:prod": "webpack -p --env production",
+    "build:dev": "webpack",
     "dev-server": "webpack-dev-server"
   },
   "author": "Bassit Owolabi",
@@ -19,6 +20,7 @@
     "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.4",
+    "express": "^4.15.4",
     "install": "^0.13.0",
     "live-server": "^1.2.1",
     "node-sass": "^4.13.1",
